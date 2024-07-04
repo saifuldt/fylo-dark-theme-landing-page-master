@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>fylo-dark-theme-landing-page-master</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+        :root {
+            --DarkBlue: hsl(217, 28%, 15%);
+            --DarkBlueMainBackground: hsl(218, 28%, 13%);
+            --DarkBluefooter: hsl(216, 53%, 9%);
+            --DarkBlue: hsl(219, 30%, 18%);
+            --Cyan: hsl(176, 68%, 64%);
+            --Blue: hsl(198, 60%, 50%);
+            --LightRed: hsl(0, 100%, 63%);
+            --White: hsl(0, 0%, 100%);
+        }
+        body{
+            font-family: "Open Sans", sans-serif;
+        }
+        body h1 h2 h3 h4{
+            font-family: "Raleway", sans-serif;
+        }
+
+        body h3 {
+            font-size: 20px;
+            font-weight: 700;
+            padding-top: 20px;
+
+        }
+
+        body h4 {
+            font-size: 18px;
+            font-weight: 700;
+        }
+
+        .profile {
+            padding-top: 20px;
+        }
+        .hide{
+            display: none;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <div class="bg-[--DarkBlueMainBackground] text-[--White]">
+        <header>
+            <nav class='flex justify-between items-center p-4'>
+                <div class='logo'>
+                    <img src='./asset/logo.svg' alt='logo' />
+                </div>
+                <ul class='text-gray-300 flex gap-4'>
+                    <li>
+                        <a class='hover:text-[--White]' href='#'>Featurs </a>
+                    </li>
+                    <li>
+                        <a class='hover:text-[--White]' href='#'>Team</a>
+                    </li>
+                    <li>
+                        <a class='hover:text-[--White]' href='#'>Sign In</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div class='flex flex-col justfy-center items-center'>
+            <div>
+                <img src='./asset/illustration-intro.png' png alt='Hero img' />
+            </div>
+            <div class='flex flex-col justify-center items-center text-center gap-[20px] mb-20'>
+                <h1 class='w-[350px] text-[20px]'>
+                    All your files in one secure location, accessibl anywhere.
+                </h1>
+                <p class='w-[310px]'>
+                    Fylo stores all your most important files in one secure location. Access them wherever
+                    you need, share and collaborate with friends family, and co-workers.
+                </p>
+                <button class='w-[200px] h-[40px] bg-[--Blue] hover:bg-[--Cyan] rounded-[20px] '> Get Started </button>
+            </div>
+        </div>
+
+        <div class='flex flex-col md:flex-row justify-center items-center gap-4 '>
+
+            <div class='flex flex-col justify-center items-center text-center'>
+                <img src='./asset/icon-access-anywhere.svg' alt='icon' />
+                <h3 className='w-[300px]'>
+                    Access your files, anywhere
+                </h3>
+                <p class='w-[300px]'>
+                    The ability to use a smartphone, tablet, or computer to access your account means your
+                    files follow you everywhere.
+                </p>
+            </div>
+
+            <div class='flex flex-col justify-center items-center text-center'>
+                <img src='./asset/icon-security.svg' alt='icon' />
+                <h3 class='w-[300px]'>
+                    Security you can trust
+                </h3>
+                <p class='w-[300px]'>
+                    2-factor authentication and user-controlled encryption are just a couple of the security
+                    features we allow to help secure your files.
+
+                </p>
+            </div>
+        </div>
+        <div class='flex flex-col md:flex-row justify-center items-center '>
+
+            <div class='flex flex-col justify-center items-center text-center'>
+                <img src='./asset/icon-collaboration.svg' alt='icon' />
+                <h3 class='w-[300px]'>
+                    Real-time collaboration
+                </h3>
+                <p class='w-[300px]'>
+                    Securely share files and folders with friends, family and colleagues for live collaboration.
+                    No email attachments required.
+                </p>
+            </div>
+
+            <div class='flex flex-col justify-center items-center text-center'>
+                <img src='./asset/icon-any-file.svg' alt='icon' />
+                <h3 class='w-[300px]'>
+                    Store any type of file
+                </h3>
+                <p class='w-[300px]'>
+                    Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all
+                    file types to be securely stored and shared.
+                </p>
+            </div>
+        </div>
+
+
+        <div class='flex flex-col md:flex-row  gap-16 justify-center items-center  p-4'>
+            <div>
+                <img src='./asset/illustration-stay-productive.png' alt='img' />
+            </div>
+            <div class='flex flex-col justify-start items-start  gap-[20px] mb-20'>
+                <h2 class='w-[350px] text-[20px]'>
+                    Stay productive, wherever you are
+                </h2>
+                <p class='w-[310px]'>
+                    Never let location be an issue when accessing your files. Fylo has you covered for all of your file
+                    storage needs.
+
+                    Securely share files and folders with friends, family and colleagues for live collaboration. No
+                    email
+                    attachments required.
+                </p>
+                <div
+                    class="btn text-start flex justfy-center items-center border-b-2 border-b-[--Cyan] text-[--Cyan] hover:text-[--White] hover:border-b-[--White] ">
+                    <button class='text-start w-[200px] h-[40px] '> See how Fylo works </button>
+                    <img class="ml-[-50px] " src="./asset/icon-arrow.svg" alt="arrow">
+                </div>
+            </div>
+        </div>
+
+        <div class="cards flex  justify-center items-center p-4">
+            <div>
+
+                <img class=" w-[50px] mb-[-10px]" src="./asset/bg-quotes.png" alt="quotes.png">
+
+                <div class="card flex flex-col md:flex-row justfy-center items-center gap-4">
+                    <div class="w-[350px] p-4 bg-[--DarkBlue] rounded-md">
+                        <p>
+                            Fylo has improved our team productivity by an order of magnitude. Since making the switch
+                            our
+                            team has
+                            become a well-oiled collaboration machine.
+                        </p>
+                        <div class="profile flex justfy-center items-center gap-3">
+                            <img class="rounded-full w-[50px]" src="./asset/profile-1.jpg" alt="profile">
+                            <div>
+                                <h4>
+                                    Satish Patel
+                                </h4>
+                                <p>
+                                    Founder & CEO, Huddle
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="w-[350px] p-4 bg-[--DarkBlue] rounded-md">
+                        <p>
+                            Fylo has improved our team productivity by an order of magnitude. Since making the switch
+                            our
+                            team has
+                            become a well-oiled collaboration machine.
+                        </p>
+                        <div class="profile flex justfy-center items-center gap-3">
+                            <img class="rounded-full w-[50px]" src="./asset/profile-2.jpg" alt="profile">
+                            <div>
+                                <h4>
+                                    Bruce McKenzie
+                                </h4>
+                                <p>
+                                    Founder & CEO, Huddle
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="w-[350px] p-4 bg-[--DarkBlue] rounded-md">
+                        <p>
+                            Fylo has improved our team productivity by an order of magnitude. Since making the switch
+                            our
+                            team has
+                            become a well-oiled collaboration machine.
+                        </p>
+                        <div class="profile flex justfy-center items-center gap-3">
+                            <img class="rounded-full w-[50px]" src="./asset/profile-3.jpg" alt="profile">
+                            <div>
+                                <h4>
+                                    Iva Boyd
+                                </h4>
+                                <p>
+                                    Founder & CEO, Huddle
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="subscription flex justify-center items-center pt-16 mb-[-100px] ">
+            <div class="sub bg-[--DarkBlue] w-[400px] md:w-[600px] p-4 rounded-md">
+                <div class="top text-center">
+                    <h3 class="text-xl font-bold">Get early access today</h3>
+                    <p class="p-4 text-sm">
+                        It only takes a minute to sign up and our free starter tier is extremely generous. If you have
+                        any
+                        questions, our support team would be happy to help you.
+
+                    </p>
+                </div>
+                <div class="bottom">
+
+                    <form class="flex flex-col md:flex-row justify-center items-center gap-4 p-4">
+                        <input id="email" class="bg-[--White] text-[black] pl-4  rounded-3xl w-[95%] h-[50px]" type="text"
+                            placeholder="email@example.com"  required>
+                            <p id="invalid" class="hide  text-[red]">Invalid Email ID</p>
+                        <button type="submit" id="submitButton" class="bg-[--Blue] text-[--White] rounded-3xl w-[95%] md:w-[50%] h-[50px]">Get Started
+                            For Free</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer
+        class="text-[--White] bg-[--DarkBluefooter] p-16 pt-[150px] flex flex-col gap-8 justify-center items-center">
+        <img class="justify-self-start  self-start ml-4 md:ml-[15%]" src="./asset/logo.svg" alt="logo">
+
+        <div class="flex flex-col md:flex-row gap-8 justify-center items-start">
+            <div class="flex flex-col gap-2">
+                <p class="flex justfy-center items-start gap-4 w-[300px]">
+                    <img src="./asset/icon-location.svg" alt="location">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua
+                </p>
+
+            </div>
+            <div class="flex flex-col gap-4">
+                <p class="flex justfy-center items-start gap-4">
+                    <img src="./asset/icon-phone.svg" alt="phone">
+                    +1-543-123-4567
+                </p>
+                <p class="flex justfy-center items-start gap-4">
+                    <img src="./asset/icon-email.svg" alt="wmail">
+                    example@fylo.com
+                </p>
+            </div>
+
+            <div class="li">
+                <ul class="flex flex-col gap-2">
+                    <li>About Us</li>
+                    <li>Jobs</li>
+                    <li>Press</li>
+                    <li> Blog</li>
+                </ul>
+            </div>
+
+
+            <div class="li">
+                <ul class="flex flex-col gap-2">
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Privacy</a></li>
+                </ul>
+            </div>
+
+
+            <div class="flex gap-4 self-center md:self-start justify-self-center ">
+                <img class=" bg-[--White] rounded-full w-[40px] h-[40px]" src="./asset/facebook.png" alt="icon">
+                <img class=" bg-[--White] rounded-full w-[40px] h-[40px]" src="./asset/twitter.png" alt="icon">
+                <img class=" bg-[--White] rounded-full w-[40px] h-[40px] " src="./asset/instagram.png" alt="icon">
+            </div>
+
+        </div>
+
+
+
+    </footer>
+
+
+    <script>
+        const emailInput = document.getElementById('email');
+        const invalidMessage = document.getElementById('invalid');
+        const submitButton = document.getElementById('submitButton');
+
+        submitButton.addEventListener('click', (event) => {
+            event.preventDefault();
+            const emailValue = emailInput.value;
+
+            if (!validateEmail(emailValue)) {
+                invalidMessage.classList.remove('hide');
+            } else {
+                invalidMessage.classList.add('hide');
+                alert('Thank You for With Us');
+            }
+
+            emailInput.value = '';
+        });
+
+        function validateEmail(emailValue) {
+            const regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+            return regex.test(emailValue);
+        }
+    </script>
+</body>
+
+</html>
